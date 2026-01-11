@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+function Header(){
+  const [name, setName] = useState("");
+  return(
+    <div style={{textAlign:"center"}}>
+      <h1>Welcome to Vectorial Labs!</h1>
+      <input value={name} onChange={(e) => setName(e.target.value)} placeholder='Enter Your Name'></input>
+      <h1>Welcome, {name}</h1>
     </div>
-  );
+  )
+}
+
+function App(){
+  return(
+    <div>
+      <Header />
+    </div>
+  )
 }
 
 export default App;
