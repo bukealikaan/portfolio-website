@@ -44,10 +44,41 @@ body::before {
   margin-right: 10vh;
   margin-top: 10px;
   border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
 }
 
 .about{
   display: flex;
   align-items: flex-start;
   gap: 24px;
+}
+
+.projects h2{
+  font-family: "Noto Sans", sans-serif;
+  margin-left: 20px;
+}
+
+.projects-grid{
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  gap: 100px;
+  margin: 20px;
+  align-items: flex-start;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.project-cards{
+  background-color: #111111;
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  overflow-y: auto;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.project-cards span{
+  display: block;
 }
