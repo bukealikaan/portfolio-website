@@ -1,7 +1,7 @@
 function ProjectCard({name, description, technologies, link}) {
     return (
         <div className="project-cards">
-            <span>
+            <span className="project-content">
                 <h3>{name}</h3>
                 <p>{description}</p>
 
