@@ -38,7 +38,7 @@ body::before {
 
 .image1{
   width: 500px;
-  height: auto;
+  height: 250px;
   display: block;
   margin-left: auto;
   margin-right: 10vh;
@@ -119,20 +119,21 @@ section {
 }
 
 .footer{
-  text-align: center;
   font-family: "Noto Sans", sans-serif;
   background: rgba(23, 23, 23, 0.3);
+  text-align: center;
 }
+
 
 .footer-contact{
   text-align: left;
   margin-left: 20px;
 }
 
-.footer-container{
+.footer-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: flex-start;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -140,8 +141,8 @@ section {
 .social-media a{
   text-decoration: underline;
   color: #FEFFEC;
+  font-size: 24px;
 }
-
 .social-media {
   display: flex;
   flex-direction: column;
