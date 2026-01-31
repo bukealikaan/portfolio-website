@@ -7,7 +7,7 @@ function Footer(){
                     <p>Email: bukealikaan@gmail.com</p>
                 </div>
                 <div className="social-media">
-                    <h2>Follow Me!</h2>
+                    <h2>Bağlantılarım</h2>
                     <a href="https://www.instagram.com/bukealikaan/" target="_blank"><i className="fa-brands fa-instagram" ></i></a>
                     <a href="https://x.com/bukealikaan" target="_blank"><i className="fa-brands fa-x-twitter"></i></a>
                 </div>

@@ -35,18 +35,6 @@ body::before {
   margin-left: 20px;
 
 }
-
-.image1{
-  width: 500px;
-  height: 250px;
-  display: block;
-  margin-left: auto;
-  margin-right: 10vh;
-  margin-top: 10px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
-}
-
 .about{
   display: flex;
   align-items: flex-start;
@@ -147,4 +135,86 @@ section {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin-right: 10px;
+  margin-top: 10px;
 }
+
+@media (max-width: 768px) {
+
+  /* Genel boşluklar */
+  body {
+    padding: 0;
+  }
+
+  /* HEADER */
+  .header {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .header-logo {
+    display: none;
+  }
+
+  .header-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: medium;
+  }
+
+  /* ABOUT SECTION */
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about_text {
+    max-width: 100%;
+  }
+
+  .about_text p {
+    margin-left: 0;
+    padding: 0 10px;
+  }
+
+  .image1 {
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  /* PROJECTS */
+  .projects-grid {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .project-cards {
+    width: 90%;
+    height: auto;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-contact {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .social-media {
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .social-media a {
+    font-size: 20px;
+  }
+}
+
